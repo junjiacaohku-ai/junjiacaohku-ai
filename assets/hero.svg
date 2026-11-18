@@ -1,0 +1,125 @@
+<svg width="1200" height="420" viewBox="0 0 1200 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Junjia Cao — HKU learning journey</title>
+  <desc id="desc">An animated dark banner for Junjia Cao, a master's student at The University of Hong Kong, documenting a year of learning and building across AI, data systems, visualization, and application development.</desc>
+  <defs>
+    <style>
+      .orbit { transform-box: fill-box; transform-origin: center; animation: orbit 24s linear infinite; }
+      .orbit.reverse { animation-direction: reverse; animation-duration: 18s; }
+      .signal { stroke-dasharray: 7 10; animation: signal 3s linear infinite; }
+      .beacon { animation: beacon 3.2s ease-in-out infinite; }
+      .delay-1 { animation-delay: .8s; }
+      .delay-2 { animation-delay: 1.6s; }
+      .delay-3 { animation-delay: 2.4s; }
+      .core { animation: core 3.6s ease-in-out infinite; }
+      .kicker, .headline, .subtitle, .rail { opacity: .3; animation: reveal .9s cubic-bezier(.16,1,.3,1) forwards; }
+      .headline-1 { animation-delay: .12s; }
+      .headline-2 { animation-delay: .26s; }
+      .subtitle { animation-delay: .45s; }
+      .rail { animation-delay: .62s; }
+      .visual { opacity: .5; animation: visual-reveal 1.1s .2s ease-out forwards; }
+      .ring-wave { transform-box: fill-box; transform-origin: center; animation: ring-wave 5s ease-out infinite; }
+      .ring-wave.delay { animation-delay: 2.5s; }
+      .packet { animation: packet 3.4s ease-in-out infinite; }
+      .chip { animation: chip 8s ease-in-out infinite; }
+      .chip-2 { animation-delay: 2s; }
+      .chip-3 { animation-delay: 4s; }
+      .chip-4 { animation-delay: 6s; }
+      .trace { stroke-dasharray: 100 2300; animation: trace 12s linear infinite; }
+      .scan { opacity: 0; animation: scan 8s ease-in-out infinite; }
+      @keyframes orbit { to { transform: rotate(360deg); } }
+      @keyframes signal { to { stroke-dashoffset: -34; } }
+      @keyframes beacon { 0%,100% { opacity: .45; } 50% { opacity: 1; } }
+      @keyframes core { 0%,100% { opacity: .82; } 50% { opacity: 1; } }
+      @keyframes reveal { from { opacity: .3; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+      @keyframes visual-reveal { to { opacity: 1; } }
+      @keyframes ring-wave { 0% { opacity: .45; transform: scale(.7); } 75%,100% { opacity: 0; transform: scale(1.4); } }
+      @keyframes packet { 0% { opacity: 0; transform: translate(0,0); } 15%,80% { opacity: 1; } 100% { opacity: 0; transform: translate(var(--dx),var(--dy)); } }
+      @keyframes chip { 0%,19%,100% { opacity: .5; } 5%,13% { opacity: 1; } }
+      @keyframes trace { to { stroke-dashoffset: -2400; } }
+      @keyframes scan { 0%,12% { opacity: 0; transform: translateX(0); } 25%,70% { opacity: .45; } 88%,100% { opacity: 0; transform: translateX(430px); } }
+      @media (prefers-reduced-motion: reduce) {
+        .orbit, .signal, .beacon, .core, .kicker, .headline, .subtitle, .rail, .chip, .trace { animation: none; opacity: 1; transform: none; stroke-dashoffset: 0; }
+        .visual { animation: none; opacity: 1; }
+        .ring-wave, .packet, .scan { display: none; }
+      }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#071712"/>
+      <stop offset=".52" stop-color="#09131A"/>
+      <stop offset="1" stop-color="#141126"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="720" y1="60" x2="1120" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#48D6AD"/>
+      <stop offset=".52" stop-color="#63C7E6"/>
+      <stop offset="1" stop-color="#B79AE8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(946 210) rotate(90) scale(196)">
+      <stop stop-color="#48D6AD" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#48D6AD" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" stroke="#B5C9C2" stroke-opacity=".055"/>
+    </pattern>
+    <filter id="soft-glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="visual-clip"><rect x="686" y="34" width="472" height="344" rx="24"/></clipPath>
+  </defs>
+
+  <rect width="1200" height="420" rx="28" fill="url(#bg)"/>
+  <rect x="1" y="1" width="1198" height="418" rx="27" stroke="#F4FAF7" stroke-opacity=".08" stroke-width="2"/>
+  <rect class="trace" x="2" y="2" width="1196" height="416" rx="26" stroke="url(#accent)" stroke-opacity=".48" stroke-width="2"/>
+  <rect width="1200" height="420" rx="28" fill="url(#grid)"/>
+  <circle cx="946" cy="210" r="196" fill="url(#glow)"/>
+  <g clip-path="url(#visual-clip)">
+    <rect class="scan" x="690" y="46" width="2" height="320" fill="#8FF0D1"/>
+    <rect class="scan" x="692" y="46" width="36" height="320" fill="#48D6AD" fill-opacity=".035"/>
+  </g>
+
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace">
+    <text class="kicker" x="72" y="64" fill="#65DDB9" font-size="13" font-weight="700" letter-spacing="3">JUNJIA CAO / HKU · 2026–27</text>
+    <text class="headline headline-1" x="72" y="145" fill="#F4FAF7" font-family="Avenir Next,Segoe UI,sans-serif" font-size="51" font-weight="750" letter-spacing="-1.6">Learning. Building.</text>
+    <text class="headline headline-2" x="72" y="207" fill="#65DDB9" font-family="Avenir Next,Segoe UI,sans-serif" font-size="47" font-weight="750" letter-spacing="-1.6">Documenting the journey.</text>
+    <text class="subtitle" x="72" y="268" fill="#ACC0BA" font-family="Avenir Next,Segoe UI,sans-serif" font-size="18">A year of computer science at The University of Hong Kong.</text>
+    <text class="subtitle" x="72" y="299" fill="#7F9991" font-family="Avenir Next,Segoe UI,sans-serif" font-size="15">Code, experiments, and projects — kept in one place.</text>
+    <g class="rail">
+      <line x1="72" y1="330" x2="664" y2="330" stroke="#29423B"/>
+      <circle class="core" cx="78" cy="358" r="5" fill="#65DDB9"/>
+      <text x="94" y="362" fill="#9DB5AD" font-size="10.5" letter-spacing="1">AI &amp; DEEP LEARNING · DATA SYSTEMS · VISUALIZATION</text>
+      <text x="94" y="385" fill="#758F87" font-size="10.5" letter-spacing="1">MOBILE APPS · CLIENT–SERVER SYSTEMS · OPEN SOURCE</text>
+      <text x="664" y="405" fill="#607A72" font-size="9.5" letter-spacing="1" text-anchor="end">HONG KONG · MASTER'S LEARNING ARCHIVE</text>
+    </g>
+  </g>
+
+  <g class="visual" transform="translate(940 210)">
+    <circle r="139" stroke="#63C7E6" stroke-opacity=".11"/>
+    <circle class="ring-wave" r="76" stroke="#48D6AD" stroke-opacity=".4"/>
+    <circle class="ring-wave delay" r="76" stroke="#B79AE8" stroke-opacity=".32"/>
+    <circle class="orbit" r="105" stroke="#48D6AD" stroke-opacity=".4" stroke-dasharray="5 9"/>
+    <circle class="orbit reverse" r="83" stroke="#C7A252" stroke-opacity=".22" stroke-dasharray="2 12"/>
+    <circle r="65" stroke="url(#accent)" stroke-width="2" stroke-opacity=".55"/>
+    <circle class="core" r="38" fill="#0B1B1A" stroke="#65DDB9" stroke-width="2" filter="url(#soft-glow)"/>
+    <path d="M-19 -15L-29 0L-19 15M19 -15L29 0L19 15M7 -23L-7 23" stroke="#E7FFF5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <path class="signal" d="M-176 -63H-122L-88 -34" stroke="#48D6AD" stroke-width="2"/>
+    <circle class="beacon" cx="-176" cy="-63" r="5" fill="#48D6AD"/>
+    <circle class="packet" style="--dx:88px;--dy:29px" cx="-176" cy="-63" r="4" fill="#C4FFEA"/>
+    <path class="signal" d="M-174 85H-120L-87 48" stroke="#63C7E6" stroke-width="2"/>
+    <circle class="beacon delay-1" cx="-174" cy="85" r="5" fill="#63C7E6"/>
+    <circle class="packet delay-1" style="--dx:87px;--dy:-37px" cx="-174" cy="85" r="4" fill="#D5F5FF"/>
+    <path class="signal" d="M170 -84H124L90 -48" stroke="#B79AE8" stroke-width="2"/>
+    <circle class="beacon delay-2" cx="170" cy="-84" r="5" fill="#B79AE8"/>
+    <circle class="packet delay-2" style="--dx:-80px;--dy:36px" cx="170" cy="-84" r="4" fill="#EAE0FF"/>
+    <path class="signal" d="M177 72H122L91 43" stroke="#C7A252" stroke-width="2"/>
+    <circle class="beacon delay-3" cx="177" cy="72" r="5" fill="#C7A252"/>
+    <circle class="packet delay-3" style="--dx:-86px;--dy:-29px" cx="177" cy="72" r="4" fill="#FFE9B8"/>
+  </g>
+
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace" font-size="11" font-weight="700" letter-spacing="1.3">
+    <g class="chip chip-1" transform="translate(716 128)"><rect width="112" height="28" rx="14" fill="#0A211B" stroke="#48D6AD" stroke-opacity=".4"/><text x="56" y="18" text-anchor="middle" fill="#8FF0D1">LEARN</text></g>
+    <g class="chip chip-2" transform="translate(716 278)"><rect width="112" height="28" rx="14" fill="#0B1C25" stroke="#63C7E6" stroke-opacity=".4"/><text x="56" y="18" text-anchor="middle" fill="#A5E8FA">BUILD</text></g>
+    <g class="chip chip-3" transform="translate(1040 106)"><rect width="110" height="28" rx="14" fill="#191327" stroke="#B79AE8" stroke-opacity=".45"/><text x="55" y="18" text-anchor="middle" fill="#D8C7F5">TEST</text></g>
+    <g class="chip chip-4" transform="translate(1045 264)"><rect width="106" height="28" rx="14" fill="#251E11" stroke="#C7A252" stroke-opacity=".45"/><text x="53" y="18" text-anchor="middle" fill="#E9CB8D">SHARE</text></g>
+  </g>
+</svg>
