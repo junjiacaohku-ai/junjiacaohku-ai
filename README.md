@@ -5,6 +5,7 @@
 <br />
 
 [![HKU](https://img.shields.io/badge/HKU-Master's_Student-00573F?style=for-the-badge&labelColor=0B1220&color=00573F)](https://www.hku.hk/)
+[![Main Account](https://img.shields.io/badge/Independent_Products-Cjj040721-0B1220?style=for-the-badge&labelColor=6E56CF&color=0B1220)](https://github.com/Cjj040721)
 [![Learning](https://img.shields.io/badge/Focus-AI_%26_Computer_Science-0B1220?style=for-the-badge&labelColor=167D6A&color=0B1220)](#selected-coursework)
 [![Location](https://img.shields.io/badge/Based_in-Hong_Kong-0B1220?style=for-the-badge&labelColor=C7A252&color=0B1220)](https://github.com/junjiacaohku-ai)
 [![Follow](https://img.shields.io/github/followers/junjiacaohku-ai?style=for-the-badge&logo=github&label=FOLLOW&labelColor=6E56CF&color=0B1220)](https://github.com/junjiacaohku-ai?tab=followers)
@@ -29,6 +30,14 @@ My current work spans **artificial intelligence, deep learning, data systems, vi
 - **Build and measure.** Turn concepts into working code, controlled experiments, and visible results.
 - **Document the process.** Keep reproducible work and honest records of what succeeded and what did not.
 
+## My two GitHub spaces
+
+| Account | Purpose |
+|---|---|
+| **[junjiacaohku-ai — this account](https://github.com/junjiacaohku-ai)** | HKU coursework, team projects, research experiments, workshops, assignments, and learning archives |
+| **[Cjj040721 — main account](https://github.com/Cjj040721)** | Independent products, iOS and PWA applications, machine-learning projects, and build-in-public work |
+| **[BUFN](https://github.com/Cjj040721/BUFN) · [caojunjia.com](https://caojunjia.com)** | The writing and public narrative connecting my independent projects |
+
 ## Selected coursework
 
 | Course | Project or collection | What I explored |
@@ -39,6 +48,7 @@ My current work spans **artificial intelligence, deep learning, data systems, vi
 | **COMP7104 / DASC7104** | [Advanced Database Assignments](https://github.com/junjiacaohku-ai/COMP7014-Assignment) | Analytical SQL, query optimisation, execution internals, transactions, and concurrency control |
 | **COMP7507** | [Data Visualization Labs](https://github.com/junjiacaohku-ai/COMP7507-Lab) | Tableau, Plotly Dash, dashboard design, visual storytelling, and Gephi network analysis |
 | **COMP7506** | [Smart Phone Apps Workshops](https://github.com/junjiacaohku-ai/COMP7506-WorkShop) | Android and iOS development, mobile UI, client–server systems, Flask, and SQLite |
+| **Resource archive** | [HKU MSc(CompSc) Resources](https://github.com/junjiacaohku-ai/HKU-MSc-CS-Resources) | A bilingual pre-arrival archive of public course materials, projects, official documents, and application notes |
 
 ## Learning toolkit
 
